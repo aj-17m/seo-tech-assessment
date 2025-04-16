@@ -1,6 +1,7 @@
 <?php namespace App\Controllers;
 
 use App\Models\{CategoryModel, ProductModel};
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Products extends BaseController
 {
@@ -10,6 +11,11 @@ class Products extends BaseController
         $prodModel = new ProductModel();
         
         $category = $catModel->where('slug', $slug)->first();
+        
+        if (!$category) {
+            throw PageNotFoundException::forPageNotFound();
+        }
+        
         $products = $prodModel->where('category_id', $category['id'])->findAll();
         
         $data = [
@@ -24,6 +30,10 @@ class Products extends BaseController
     {
         $model = new ProductModel();
         $product = $model->where('slug', $slug)->first();
+        
+        if (!$product) {
+            throw PageNotFoundException::forPageNotFound();
+        }
         
         // SEO Meta Tags
         $data = [
