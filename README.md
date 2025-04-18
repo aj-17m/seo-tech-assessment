@@ -2,7 +2,7 @@
 
  Some Sample images For Working Assignment -
 
- 
+
   ![alt text](<Screenshot 2025-04-18 154108.png>)
 
   ![alt text](<Screenshot 2025-04-18 154139.png>)
@@ -19,7 +19,9 @@
 ------------------------------------------------------------------------
 
 Database Images ---
-![alt text](<Screenshot 2025-04-18 155500.png>) ![alt text](<Screenshot 2025-04-18 155454.png>) ![alt text](<Screenshot 2025-04-18 155447.png>) ![alt text](<Screenshot 2025-04-18 154534-1.png>)
+![alt text](<Screenshot 2025-04-18 155447-1.png>)
+![alt text](<Screenshot 2025-04-18 155454-1.png>)
+![alt text](<Screenshot 2025-04-18 155500-1.png>)
 
 -------------------------------------------------------------------------
   
