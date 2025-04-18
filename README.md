@@ -1,5 +1,23 @@
-# SEO-Friendly Product Listing Platform
+# SEO-Friendly Product Listing Platform\
 
+
+ Some Sample images For Working Assignment -
+  ![alt text](<Screenshot 2025-04-18 154108.png>)
+
+  ![alt text](<Screenshot 2025-04-18 154139.png>)
+
+
+  ![alt text](<Screenshot 2025-04-18 154149.png>)
+
+  ![alt text](<Screenshot 2025-04-18 154129.png>)
+
+  ![alt text](<Screenshot 2025-04-18 154534.png>)
+
+  ![alt text](image-1.png)
+
+
+
+  
 ## Overview
 A programmatic SEO-focused product directory built with CodeIgniter (PHP MVC framework). Generates dynamic, SEO-optimized pages for categories and products with automatic technical SEO implementations.
 

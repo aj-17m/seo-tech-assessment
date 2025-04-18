@@ -12,10 +12,21 @@ $routes->get('/sitemap.xml', 'Sitemap::index');
 
 // Admin Routes
 $routes->group('admin', function($routes) {
+    // Public routes (no auth required)
     $routes->get('login', 'Admin::login');
     $routes->post('authenticate', 'Admin::authenticate');
     $routes->get('logout', 'Admin::logout');
-    
-    $routes->resource('categories', ['controller' => 'AdminCategories']);
-    $routes->resource('products', ['controller' => 'AdminProducts']);
+
+    // Protected routes (require admin auth)
+    $routes->group('', ['filter' => 'adminauth'], function($routes) {
+        $routes->get('dashboard', 'Admin::dashboard');
+        $routes->resource('categories', [
+            'controller' => 'AdminCategories',
+            'except' => 'show' // Remove show route if not needed
+        ]);
+        $routes->resource('products', [
+            'controller' => 'AdminProducts',
+            'except' => 'show' // Remove show route if not needed
+        ]);
+    });
 });
